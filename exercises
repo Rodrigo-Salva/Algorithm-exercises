@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+from timeit import default_timer as timer
+
+n_values = [10**2, 10**3, 10**4, 10**5, 10**6]
+time = []
+
+for n in n_values:
+    start = timer()
+    for i in range(n):
+        pass 
+    end = timer()
+    proc_time = end - start
+    time.append(proc_time)
+    print(f"Processing time for n = {n}: {proc_time:.6f} seconds")
+
+plt.plot(n_values, time, color="Red", marker='o')
+plt.xlabel('n (Loop size)')
+plt.ylabel('Processing time (seconds)')
+plt.title('Execution time as a function of loop size')
+plt.xscale('log') 
+plt.grid(True)
+plt.show()
