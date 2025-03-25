@@ -159,4 +159,4 @@ Cada integrante del grupo debe seleccionar un ejercicio diferente y desarrollarl
 
 ---
 
-👨‍💻 **Autor:** [Rodrigo Salva Saccatoma]([https://github.com/tu_usuario](https://github.com/Rodrigo-Salva/Algorithm-exercises?tab=readme-ov-file))
+👨‍💻 **Autor:** [Rodrigo Salva Saccatoma](https://github.com/Rodrigo-Salva/Algorithm-exercises)
