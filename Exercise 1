@@ -1,0 +1,32 @@
+import matplotlib.pyplot as plt
+from timeit import default_timer as timer
+
+def logarithms(n):
+    i = 1
+    iterations = 0
+    while i <= n:
+        i = i * 2
+        iterations += 1
+    return iterations
+
+n_values = [1, 10, 100, 100000, 1000000]
+time = []
+
+for n in n_values:
+    start=timer()
+    logarithms(n)
+    end=timer()
+    time.append(end - start)
+    pass
+
+proc_time= end - start
+
+print(f"n = {n}: Processing time = {proc_time:.6f} seconds")
+ 
+plt.plot(n_values, time, color="Red",  marker='o')
+plt.xscale('log')
+plt.title('Loops')
+plt.xlabel('Iteractions')
+plt.ylabel('Time(s)')
+plt.grid(True)
+plt.show()
